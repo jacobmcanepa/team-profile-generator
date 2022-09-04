@@ -6,6 +6,9 @@ test('inherits from parent constructor', () => {
   expect(manager.name).toBe('Dave');
   expect(manager.id).toEqual(expect.any(Number));
   expect(manager.email).toEqual(expect.any(String));
+  expect(manager.getName()).toEqual(expect.any(String));
+  expect(manager.getId()).toEqual(expect.any(Number));
+  expect(manager.getEmail()).toEqual(expect.any(String));
 });
 
 test('Manager object has officeNumber property', () => {

@@ -6,6 +6,9 @@ test('inherited from parent constructor', () => {
   expect(engineer.name).toBe('Jeff');
   expect(engineer.id).toEqual(2);
   expect(engineer.email).toBe('email@gmail.com');
+  expect(engineer.getName()).toEqual(expect.any(String));
+  expect(engineer.getId()).toEqual(expect.any(Number));
+  expect(engineer.getEmail()).toEqual(expect.any(String));
 });
 
 test('has github property', () => {
