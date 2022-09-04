@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A command-line application that will generate a profile of your team based on user inputs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobmcanepa/team-profile-generator.git"
+  },
+  "author": "Jacob M. Canepa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobmcanepa/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/jacobmcanepa/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
