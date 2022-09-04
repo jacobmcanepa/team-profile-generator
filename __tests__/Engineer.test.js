@@ -14,6 +14,13 @@ test('has github property', () => {
   expect(engineer.github).toEqual(expect.any(String));
 });
 
+test('retrives github', () => {
+  const engineer = new Engineer('Jeff', 2, 'email@gmail.com', 'octocat');
+
+  expect(engineer.getGithub()).toEqual(expect.any(String));
+  expect(engineer.getGithub()).toBe('octocat');
+});
+
 test('retrieves role', () => {
   const engineer = new Engineer('Jeff', 2, 'email.@gmail.com', 'octocat');
 
