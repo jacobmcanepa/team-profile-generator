@@ -5,5 +5,11 @@ const loadHTML = employee => {
 };
 
 module.exports = teamArr => {
-  console.log(teamArr.forEach(loadHTML));
+  let arr = [];
+  for (let i = 0; i < teamArr.length; i++) {
+    const pageHTML = loadHTML(teamArr[i]);
+    arr.push(pageHTML);
+  }
+  joinedHTML = arr.join('');
+  console.log(joinedHTML);
 };
