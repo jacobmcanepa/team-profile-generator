@@ -110,7 +110,8 @@ const promptMemberType = () => {
           console.log('======================');
           //const pageHTML = pageTemplate(teamArr);
           //console.log(pageHTML);
-          pageTemplate(teamArr);
+          const pageHTML = pageTemplate(teamArr);
+          generatePage(pageHTML);
         }
       });
 };

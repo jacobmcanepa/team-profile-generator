@@ -11,5 +11,5 @@ module.exports = teamArr => {
     arr.push(pageHTML);
   }
   joinedHTML = arr.join('');
-  console.log(joinedHTML);
+  return joinedHTML;
 };
