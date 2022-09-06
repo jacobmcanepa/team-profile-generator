@@ -2,6 +2,8 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
+const pageTemplate = require("./src/page-template");
+const generatePage = require("./utils/generate-page");
 let teamArr = [];
 
 const getManagerData = () => {
@@ -105,6 +107,10 @@ const promptMemberType = () => {
           ==============
           `);
           console.log(teamArr);
+          console.log('======================');
+          //const pageHTML = pageTemplate(teamArr);
+          //console.log(pageHTML);
+          pageTemplate(teamArr);
         }
       });
 };
