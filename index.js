@@ -101,17 +101,11 @@ const promptMemberType = () => {
         else if (answer.memberType[0] === 'Intern') {
           getInternData();
         } else {
-          console.log(`
-          ==============
-          Finished Array
-          ==============
-          `);
-          console.log(teamArr);
-          console.log('======================');
-          //const pageHTML = pageTemplate(teamArr);
-          //console.log(pageHTML);
           const pageHTML = pageTemplate(teamArr);
-          generatePage(pageHTML);
+          generatePage(pageHTML)
+            .then(generatePageResponse => {
+              console.log(generatePageResponse.message);
+            });
         }
       });
 };

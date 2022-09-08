@@ -22,3 +22,10 @@ test('retrieves role', () => {
 
   expect(manager.getRole()).toBe('Manager');
 });
+
+test('retrieves office number', () => {
+  const manager = new Manager('Dave', 1, 'email@gmail.com', 911);
+
+  expect(manager.getOfficeNum()).toBe(911);
+  expect(manager.getOfficeNum()).toEqual(expect.any(Number));
+});
